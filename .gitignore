@@ -10,5 +10,9 @@ references/
 viz/*
 !viz/.gitkeep
 
+# 抓取的外部原文/PDF/视频（版权 + 体积）：仅本地，不进仓库
+resources/raw/*
+!resources/raw/.gitkeep
+
 # 系统文件
 .DS_Store

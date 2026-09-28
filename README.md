@@ -95,6 +95,22 @@ bash ~/learn/harness/scripts/new-workspace.sh ~/learn/english-writing
 
 ---
 
+## 资料（外部材料）
+
+教学常要用官方文档、博客、书、课程、视频。**不囤积**——只做「登记 → 按需提取 → 引用」：
+
+- **免费可抓的**（官方文档 / 博客 / 公开 PDF / YouTube）：用 `pi-web-access` 的 `fetch_content` 抓回来，只提炼本节用到的部分，写成 `resources/extracts/<slug>.md`（你自己的话 + 出处 + 日期）。
+- **抓不到的**（付费墙 / 极客时间 / 需登录 / 无公开源）：列进 `resources/wanted.md`，AI 会**具体地**告诉你需要哪份、为什么、怎么给（导出 PDF / 粘贴正文 / 截图 / 给本地路径）。
+- **原文**（PDF/视频）：放 `resources/raw/`，**仅本地、不进 git**；复习笔记发布时只放链接。
+
+```
+resources/
+├── sources.md      # 来源登记表
+├── wanted.md       # 需要你提供的清单
+├── extracts/       # 提炼后的要点笔记
+└── raw/            # 抓取的原文（gitignore）
+```
+
 ## 发布到学习站点
 
 结课时 `teach` 会把知识点写成复习笔记，落到：
@@ -124,6 +140,7 @@ $SITE_DIR/static/learning/<file>          # 图片（如有）
 ├── README.md
 ├── scripts/
 │   └── new-workspace.sh          # 从本 harness 复制出一个新学习工作区
+├── resources/                    # 外部材料：来源登记 / 要点 / 待你提供（原文 gitignore）
 ├── viz/                          # 生成的图（产物 gitignore）
 └── .pi/
     ├── settings.json             # 模型 + 子代理 + packages
