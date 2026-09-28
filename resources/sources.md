@@ -8,4 +8,8 @@
 
 | id | 类型 | 标题 | 位置 | 访问 | 用途 | 状态 |
 |----|------|------|------|------|------|------|
-|    |      |      |      |      |      |      |
+| P1 | 文档 | Python 数据模型（objects, values, types; `__eq__`） | https://docs.python.org/3/reference/datamodel.html | 免费可抓 | 对象身份、`==` 语义 | 已提取 |
+| P2 | 文档 | Python 比较运算（`==`） | https://docs.python.org/3/reference/expressions.html#comparisons | 免费可抓 | list 逐元素 `==` | 已提取 |
+| P3 | 文档 | Python 身份比较（`is` / `is not`） | https://docs.python.org/3/reference/expressions.html#is | 免费可抓 | `is` 语义 | 已提取 |
+
+> 说明：以上行为均已用解释器直接验证，实测记录见 `extracts/python-is-vs-eq.md`。
