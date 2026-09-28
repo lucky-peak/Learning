@@ -1,0 +1,28 @@
+{
+  "packages": [
+    "npm:pi-web-access",
+    "npm:pi-subagents"
+  ],
+  "defaultProvider": "deepseek",
+  "defaultModel": "deepseek-v4-pro",
+  "defaultThinkingLevel": "high",
+  "enableSkillCommands": true,
+  "subagents": {
+    "defaultModel": "deepseek-flash",
+    "defaultThinking": "low",
+    "agentOverrides": {
+      "researcher": {
+        "model": "deepseek-v4-pro",
+        "thinking": "high"
+      },
+      "oracle": {
+        "model": "deepseek-v4-pro",
+        "thinking": "high"
+      },
+      "evidence-auditor": {
+        "model": "deepseek-v4-pro",
+        "thinking": "high"
+      }
+    }
+  }
+}
